@@ -1,0 +1,11 @@
+# repos
+collections:
+  label: Awesome-* Collections
+  label_zh_CN: Awesome-* 集合
+  repos:
+    - sindresorhus/awesome-nodejs
+frontend:
+  label: Frontend
+  label_zh_CN: 前端
+  repos:
+    - sindresorhus/awesome-nodejs

@@ -1,0 +1,28 @@
+{
+  "name": "worthfollow",
+  "version": "0.0.1",
+  "description": "Repositories and authors worth following",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/worthfollow/worthfollow.git"
+  },
+  "keywords": [
+    "worthfollow",
+    "awesome",
+    "worth",
+    "following"
+  ],
+  "author": "Yudu Ban <banyudu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/worthfollow/worthfollow/issues"
+  },
+  "homepage": "https://github.com/worthfollow/worthfollow#readme",
+  "devDependencies": {
+    "yaml": "^1.10.2"
+  }
+}
