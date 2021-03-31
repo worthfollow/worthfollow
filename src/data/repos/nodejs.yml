@@ -1,13 +1,8 @@
 label: Node.js
 repos:
-  - nodejs/node
-  - sindresorhus/awesome-nodejs
-children:
-  webFrameworks:
-    label: Web Frameworks
-    label_zh_CN: Web框架
-    repos:
-      - expressjs/express
-      - koajs/koa
-      - hapijs/hapi
-      - nestjs/nest
+  - { name: nodejs/node }
+  - { name: sindresorhus/awesome-nodejs }
+  - { name: expressjs/expres, category: webFrameworks }
+  - { name: koajs/koa, category: webFrameworks }
+  - { name: hapijs/hapi, category: webFrameworks }
+  - { name: nestjs/nest, category: webFrameworks }

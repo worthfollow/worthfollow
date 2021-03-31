@@ -1,6 +1,5 @@
 label: Awesome of awesome
-open: true
 order: 1
 repos:
-  - sindresorhus/awesome
-  - bayandin/awesome-awesomeness
+  - { name: sindresorhus/awesome }
+  - { name: bayandin/awesome-awesomeness }

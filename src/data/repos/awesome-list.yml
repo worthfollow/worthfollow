@@ -3,11 +3,11 @@ label_zh_CN: Awesome 集合
 open: true
 order: 2
 repos:
-  - sindresorhus/awesome-nodejs
-  - enaqx/awesome-react
-  - Awesome-Windows/Awesome
-  - awesomeWM/awesome
-  - dypsilon/frontend-dev-bookmarks
-  - vinta/awesome-python
-  - vsouza/awesome-ios
-  - JStumpp/awesome-android
+  - { name: sindresorhus/awesome-nodejs }
+  - { name: enaqx/awesome-react }
+  - { name: Awesome-Windows/Awesome }
+  - { name: awesomeWM/awesome }
+  - { name: dypsilon/frontend-dev-bookmarks }
+  - { name: vinta/awesome-python }
+  - { name: vsouza/awesome-ios }
+  - { name: JStumpp/awesome-android }

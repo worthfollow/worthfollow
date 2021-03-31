@@ -56,6 +56,15 @@ const getRepos = async () => {
     const name = path.basename(file, '.yml')
     const fileContent = await fs.readFile(path.join(reposDir, file), 'utf-8')
     const data = YAML.parse(fileContent)
+    data.children = data.repos.reduce((res, repo) => {
+      const { name, category } = repo
+      if (category) {
+        res[category] = res[category] || { label: category, repos: [] }
+        res[category].repos.push(name)
+      }
+      return res
+    }, {})
+    data.repos = data.repos.filter(item => !item.category).map(item => item.name)
     result[name] = data
   }
   return result

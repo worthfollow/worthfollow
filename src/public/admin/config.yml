@@ -3,18 +3,25 @@ backend:
   branch: main
   repo: worthfollow/worthfollow
 
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 media_folder: src/public/media
 public_folder: /media
 collections:
-  - name: posts
-    label: Posts
-    label_singular: 'Post'
-    folder: content/posts
+  - name: repos
+    label: Repos
+    folder: src/data/repos
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
-      - label: Template
-        name: template
-        widget: hidden
-        default: post
+      - label: label
+        name: label
+        widget: string
+      - label: order
+        name: order
+        widget: number
+        required: false
+      - label: repos
+        name: repos
+        widget: list
+        fields:
+          - { label: name, name: name, widget: string }
+          - { label: category, name: category, widget: string, required: false }
