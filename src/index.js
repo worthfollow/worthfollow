@@ -16,13 +16,16 @@ const _generate = async (tree, level = 2) => {
   const keys = Object.keys(tree).sort((a, b) => tree[b].starCount - tree[a].starCount)
   const indent = '#'.repeat(level) + ' '
   const result = (await Promise.all(keys.map(async key => {
-    const { repos, label, children } = tree[key]
+    const { repos, label, children, open } = tree[key]
     const title = `${indent}${label}`
+    const summary = `<summary>${label}</summary>`
+    const detailsHead = open ? `<details open>` : '<details>'
+    const detailsTail = '</details>'
     const repoContent = repos.map(repo => {
       return `- [${repo.name}](https://github.com/${repo.name}) - ${repo.description}`
     }).join('\n\n')
     const childrenContent = await _generate(children, level + 1)
-    return [title, repoContent, childrenContent].join('\n\n')
+    return [detailsHead, summary, title, repoContent, childrenContent, detailsTail].join('\n\n')
   }))).join('\n\n')
   return result
 }
