@@ -6,7 +6,8 @@
   "scripts": {
     "prepublishOnly": "npm run build",
     "start": "node src/index.js",
-    "build": "node src/index.js",
+    "build": "rm -rf dist && cp -r src/public dist",
+    "readme": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

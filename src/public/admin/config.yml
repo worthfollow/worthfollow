@@ -1,0 +1,20 @@
+backend:
+  name: github
+  branch: main
+  repo: worthfollow/worthfollow
+
+# publish_mode: editorial_workflow
+media_folder: src/public/media
+public_folder: /media
+collections:
+  - name: posts
+    label: Posts
+    label_singular: 'Post'
+    folder: content/posts
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - label: Template
+        name: template
+        widget: hidden
+        default: post

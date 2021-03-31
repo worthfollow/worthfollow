@@ -49,7 +49,7 @@ const generate = async (tree, level = 2) => {
 }
 
 const buildReadme = async () => {
-  const dataFile = await fs.readFile(path.join(__dirname, 'data', 'source.yml'), 'utf-8')
+  const dataFile = await fs.readFile(path.join(__dirname, 'data', 'repos.yml'), 'utf-8')
   const tree = YAML.parse(dataFile)
   const repoTree = tree.repos
   const repoSet = new Set()
