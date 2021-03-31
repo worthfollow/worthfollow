@@ -1,0 +1,22 @@
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - './src/data.yml'
+name: Build Readme
+jobs:
+  readme:
+    name: Readme
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@master
+      with:
+        node-version: 12.x
+    - run: npm i
+    - run: npm run build
+    - name: Commit & Push changes
+      uses: actions-js/push@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
