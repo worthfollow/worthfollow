@@ -12,6 +12,8 @@ collections:
     folder: src/data/repos
     extension: yml
     format: yaml
+    editor:
+      preview: false
     create: true
     fields:
       - label: label
