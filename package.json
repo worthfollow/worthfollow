@@ -25,6 +25,10 @@
   },
   "homepage": "https://github.com/worthfollow/worthfollow#readme",
   "devDependencies": {
+    "@octokit/graphql": "^4.6.1",
     "yaml": "^1.10.2"
+  },
+  "dependencies": {
+    "base62": "^2.0.1"
   }
 }

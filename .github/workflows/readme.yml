@@ -1,9 +1,10 @@
 on:
   push:
     branches:
-      - master
+      - main
+      - develop
     paths:
-      - './src/data.yml'
+      - './src'
 name: Build Readme
 jobs:
   readme:
@@ -16,6 +17,8 @@ jobs:
         node-version: 12.x
     - run: npm i
     - run: npm run build
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:

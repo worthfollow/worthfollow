@@ -9,3 +9,9 @@ frontend:
   label_zh_CN: 前端
   repos:
     - sindresorhus/awesome-nodejs
+  children:
+    frameworks:
+      label: Frontend Frameworks
+      label_zh_CN: 前端框架
+      repos:
+        - facebook/react
