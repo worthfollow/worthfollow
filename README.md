@@ -5,19 +5,17 @@
 Repositories and authors worth following
 
 
-## Node.js
+## Frontend
 
-- [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) - :zap: Delightful Node.js packages and resources
+- [dypsilon/frontend-dev-bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks) - Manually curated collection of resources for frontend web developers.
 
-### Web Frameworks
+### Frontend Frameworks
 
-- [expressjs/express](https://github.com/expressjs/express) - Fast, unopinionated, minimalist web framework for node.
+- [angular/angular](https://github.com/angular/angular) - One framework. Mobile & desktop.
 
-- [koajs/koa](https://github.com/koajs/koa) - Expressive middleware for node.js using ES2017 async functions
+- [facebook/react](https://github.com/facebook/react) - A declarative, efficient, and flexible JavaScript library for building user interfaces.
 
-- [hapijs/hapi](https://github.com/hapijs/hapi) - The Simple, Secure Framework Developers Trust
-
-- [nestjs/nest](https://github.com/nestjs/nest) - A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications on top of TypeScript & JavaScript (ES6, ES7, ES8) 🚀
+- [vuejs/vue](https://github.com/vuejs/vue) - 🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
 
 
 
@@ -35,15 +33,17 @@ Repositories and authors worth following
 
 
 
-## Frontend
+## Node.js
 
-- [dypsilon/frontend-dev-bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks) - Manually curated collection of resources for frontend web developers.
+- [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) - :zap: Delightful Node.js packages and resources
 
-### Frontend Frameworks
+### Web Frameworks
 
-- [angular/angular](https://github.com/angular/angular) - One framework. Mobile & desktop.
+- [expressjs/express](https://github.com/expressjs/express) - Fast, unopinionated, minimalist web framework for node.
 
-- [facebook/react](https://github.com/facebook/react) - A declarative, efficient, and flexible JavaScript library for building user interfaces.
+- [koajs/koa](https://github.com/koajs/koa) - Expressive middleware for node.js using ES2017 async functions
 
-- [vuejs/vue](https://github.com/vuejs/vue) - 🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
+- [hapijs/hapi](https://github.com/hapijs/hapi) - The Simple, Secure Framework Developers Trust
+
+- [nestjs/nest](https://github.com/nestjs/nest) - A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications on top of TypeScript & JavaScript (ES6, ES7, ES8) 🚀
 
