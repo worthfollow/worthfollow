@@ -4,16 +4,33 @@ collections:
   label_zh_CN: Awesome-* 集合
   repos:
     - sindresorhus/awesome-nodejs
+    - Awesome-Windows/Awesome
+    - awesomeWM/awesome
+    - dypsilon/frontend-dev-bookmarks
+    - vinta/awesome-python
 frontend:
   label: Frontend
   label_zh_CN: 前端
   repos:
-    - sindresorhus/awesome-nodejs
+    - dypsilon/frontend-dev-bookmarks
   children:
     frameworks:
       label: Frontend Frameworks
       label_zh_CN: 前端框架
       repos:
-        # - angular/angular
+        - angular/angular
         - facebook/react
-        # - vuejs/vue
+        - vuejs/vue
+nodejs:
+  label: Node.js
+  repos:
+    - sindresorhus/awesome-nodejs
+  children:
+    webFrameworks:
+      label: Web Frameworks
+      label_zh_CN: Web框架
+      repos:
+        - expressjs/express
+        - koajs/koa
+        - hapijs/hapi
+        - nestjs/nest
