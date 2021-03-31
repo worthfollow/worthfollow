@@ -26,6 +26,7 @@ collections:
       - label: repos
         name: repos
         widget: list
+        add_to_top: true
         fields:
           - { label: name, name: name, widget: string }
           - { label: category, name: category, widget: string, required: false }
