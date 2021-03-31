@@ -5,10 +5,6 @@
 Repositories and authors worth following
 
 
-<details open>
-
-<summary>Awesome of awesome</summary>
-
 ## Awesome of awesome
 
 - [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - 😎 Awesome lists about all kinds of interesting topics
@@ -16,12 +12,6 @@ Repositories and authors worth following
 - [bayandin/awesome-awesomeness](https://github.com/bayandin/awesome-awesomeness) - A curated list of awesome awesomeness
 
 
-
-</details>
-
-<details open>
-
-<summary>Awesome Collections</summary>
 
 ## Awesome Collections
 
@@ -43,17 +33,11 @@ Repositories and authors worth following
 
 
 
-</details>
-
-<details>
-
-<summary>Frontend</summary>
-
 ## Frontend
 
 - [dypsilon/frontend-dev-bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks) - Manually curated collection of resources for frontend web developers.
 
-### Frontend Frameworks
+#### Frontend Frameworks
 
 - [angular/angular](https://github.com/angular/angular) - One framework. Mobile & desktop.
 
@@ -63,19 +47,13 @@ Repositories and authors worth following
 
 
 
-</details>
-
-<details>
-
-<summary>Node.js</summary>
-
 ## Node.js
 
 - [nodejs/node](https://github.com/nodejs/node) - Node.js JavaScript runtime :sparkles::turtle::rocket::sparkles:
 
 - [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) - :zap: Delightful Node.js packages and resources
 
-### Web Frameworks
+#### Web Frameworks
 
 - [expressjs/express](https://github.com/expressjs/express) - Fast, unopinionated, minimalist web framework for node.
 
@@ -87,28 +65,13 @@ Repositories and authors worth following
 
 
 
-</details>
-
-<details>
-
-<summary>iOS</summary>
-
 ## iOS
 
 - [vsouza/awesome-ios](https://github.com/vsouza/awesome-ios) - A curated list of awesome iOS ecosystem, including Objective-C and Swift Projects 
 
 
 
-</details>
-
-<details>
-
-<summary>Android</summary>
-
 ## Android
 
 - [JStumpp/awesome-android](https://github.com/JStumpp/awesome-android) - A curated list of awesome Android packages and resources.
 
-
-
-</details>
