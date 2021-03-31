@@ -13,10 +13,6 @@ Repositories and authors worth following
 
 - [dypsilon/frontend-dev-bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks) - Manually curated collection of resources for frontend web developers.
 
-<details>
-
-<summary>Frontend Frameworks</summary>
-
 ### Frontend Frameworks
 
 - [angular/angular](https://github.com/angular/angular) - One framework. Mobile & desktop.
@@ -26,8 +22,6 @@ Repositories and authors worth following
 - [vuejs/vue](https://github.com/vuejs/vue) - 🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
 
 
-
-</details>
 
 </details>
 
@@ -59,10 +53,6 @@ Repositories and authors worth following
 
 - [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) - :zap: Delightful Node.js packages and resources
 
-<details>
-
-<summary>Web Frameworks</summary>
-
 ### Web Frameworks
 
 - [expressjs/express](https://github.com/expressjs/express) - Fast, unopinionated, minimalist web framework for node.
@@ -74,7 +64,5 @@ Repositories and authors worth following
 - [nestjs/nest](https://github.com/nestjs/nest) - A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications on top of TypeScript & JavaScript (ES6, ES7, ES8) 🚀
 
 
-
-</details>
 
 </details>
