@@ -29,7 +29,7 @@ const _generate = async (tree, level = 2) => {
     const detailsHead = open ? `<details open>` : '<details>'
     const detailsTail = '</details>'
     const repoContent = repos.map(repo => {
-      return `- [${repo.name}](https://github.com/${repo.name}) - ${repo.description}`
+      return `- [${repo.name}](https://github.com/${repo.name}#readme) - ${repo.description}`
     }).join('\n\n')
     const childrenContent = await _generate(children, level + 2)
     const result = useDetails ?
