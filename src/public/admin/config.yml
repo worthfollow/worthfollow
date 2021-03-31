@@ -10,6 +10,8 @@ collections:
   - name: repos
     label: Repos
     folder: src/data/repos
+    extension: yml
+    format: yaml
     create: true
     fields:
       - label: label
