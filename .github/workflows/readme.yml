@@ -2,7 +2,6 @@ on:
   push:
     branches:
       - main
-      - develop
 name: Build Readme
 jobs:
   readme:
@@ -17,7 +16,9 @@ jobs:
     - run: npm run build
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - uses: nelonoel/branch-name@v1.0.1
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
