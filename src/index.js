@@ -13,7 +13,8 @@ const _generate = async (tree, level = 2) => {
     return ''
   }
   level = Math.min(6, level) // head level
-  const useDetails = level === 2
+  // const useDetails = level === 2
+  const useDetails = false
   const keys = Object.keys(tree).sort((a, b) => {
     if (tree[a].order !== tree[b].order) {
       return tree[a].order - tree[b].order
@@ -30,7 +31,7 @@ const _generate = async (tree, level = 2) => {
     const repoContent = repos.map(repo => {
       return `- [${repo.name}](https://github.com/${repo.name}) - ${repo.description}`
     }).join('\n\n')
-    const childrenContent = await _generate(children, level + 1)
+    const childrenContent = await _generate(children, level + 2)
     const result = useDetails ?
       [detailsHead, summary, title, repoContent, childrenContent, detailsTail].join('\n\n') :
       [title, repoContent, childrenContent].join('\n\n')
