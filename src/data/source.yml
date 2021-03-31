@@ -1,46 +1,57 @@
-# repos
-awesome-of-awesome:
-  label: Awesome of awesome
-  open: true
-  order: 1
-  repos:
-    - sindresorhus/awesome
-    - bayandin/awesome-awesomeness
-awesome-list:
-  label: Awesome Collections
-  label_zh_CN: Awesome 集合
-  open: true
-  order: 2
-  repos:
-    - sindresorhus/awesome-nodejs
-    - enaqx/awesome-react
-    - Awesome-Windows/Awesome
-    - awesomeWM/awesome
-    - dypsilon/frontend-dev-bookmarks
-    - vinta/awesome-python
-frontend:
-  label: Frontend
-  label_zh_CN: 前端
-  repos:
-    - dypsilon/frontend-dev-bookmarks
-  children:
-    frameworks:
-      label: Frontend Frameworks
-      label_zh_CN: 前端框架
-      repos:
-        - angular/angular
-        - facebook/react
-        - vuejs/vue
-nodejs:
-  label: Node.js
-  repos:
-    - sindresorhus/awesome-nodejs
-  children:
-    webFrameworks:
-      label: Web Frameworks
-      label_zh_CN: Web框架
-      repos:
-        - expressjs/express
-        - koajs/koa
-        - hapijs/hapi
-        - nestjs/nest
+repos:
+  awesome-of-awesome:
+    label: Awesome of awesome
+    open: true
+    order: 1
+    repos:
+      - sindresorhus/awesome
+      - bayandin/awesome-awesomeness
+  awesome-list:
+    label: Awesome Collections
+    label_zh_CN: Awesome 集合
+    open: true
+    order: 2
+    repos:
+      - sindresorhus/awesome-nodejs
+      - enaqx/awesome-react
+      - Awesome-Windows/Awesome
+      - awesomeWM/awesome
+      - dypsilon/frontend-dev-bookmarks
+      - vinta/awesome-python
+      - vsouza/awesome-ios
+      - JStumpp/awesome-android
+  frontend:
+    label: Frontend
+    label_zh_CN: 前端
+    repos:
+      - dypsilon/frontend-dev-bookmarks
+    children:
+      frameworks:
+        label: Frontend Frameworks
+        label_zh_CN: 前端框架
+        repos:
+          - angular/angular
+          - facebook/react
+          - vuejs/vue
+  nodejs:
+    label: Node.js
+    repos:
+      - nodejs/node
+      - sindresorhus/awesome-nodejs
+    children:
+      webFrameworks:
+        label: Web Frameworks
+        label_zh_CN: Web框架
+        repos:
+          - expressjs/express
+          - koajs/koa
+          - hapijs/hapi
+          - nestjs/nest
+  ios:
+    label: iOS
+    repos:
+      - vsouza/awesome-ios
+  android:
+    label: Android
+    repos:
+      - JStumpp/awesome-android

@@ -50,21 +50,22 @@ const generate = async (tree, level = 2) => {
 const buildReadme = async () => {
   const dataFile = await fs.readFile(path.join(__dirname, 'data', 'source.yml'), 'utf-8')
   const tree = YAML.parse(dataFile)
+  const repoTree = tree.repos
   const repoSet = new Set()
-  walk(tree, node => {
+  walk(repoTree, node => {
     node.repos.forEach(repo => repoSet.add(repo))
     node.order = node.order || Number.MAX_VALUE
    })
   const repos = Array.from(repoSet)
   const repoInfo = await fetchReposInfo(repos)
-  walk(tree, (node, _fullpath, pNode) => {
+  walk(repoTree, (node, _fullpath, pNode) => {
     node.repos = node.repos.map(key => repoInfo[key])
     node.starCount = node.repos.reduce((res, repo) => res + repo.starCount, node.starCount || 0)
     if (pNode) {
       pNode.starCount = (pNode.starCount || 0) + node.starCount
     }
   })
-  await generate(tree)
+  await generate(repoTree)
 }
 
 buildReadme()
