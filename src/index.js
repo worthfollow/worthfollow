@@ -13,7 +13,7 @@ const _generate = async (tree, level = 2) => {
     return ''
   }
   level = Math.min(6, level) // head level
-  const keys = Object.keys(tree).sort((a, b) => tree[a].starCount - tree[b].starCount)
+  const keys = Object.keys(tree).sort((a, b) => tree[b].starCount - tree[a].starCount)
   const indent = '#'.repeat(level) + ' '
   const result = (await Promise.all(keys.map(async key => {
     const { repos, label, children } = tree[key]
