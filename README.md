@@ -5,9 +5,17 @@
 Repositories and authors worth following
 
 
+<details>
+
+<summary>Frontend</summary>
+
 ## Frontend
 
 - [dypsilon/frontend-dev-bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks) - Manually curated collection of resources for frontend web developers.
+
+<details>
+
+<summary>Frontend Frameworks</summary>
 
 ### Frontend Frameworks
 
@@ -18,6 +26,14 @@ Repositories and authors worth following
 - [vuejs/vue](https://github.com/vuejs/vue) - 🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.
 
 
+
+</details>
+
+</details>
+
+<details open>
+
+<summary>Awesome-* Collections</summary>
 
 ## Awesome-* Collections
 
@@ -33,9 +49,19 @@ Repositories and authors worth following
 
 
 
+</details>
+
+<details>
+
+<summary>Node.js</summary>
+
 ## Node.js
 
 - [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) - :zap: Delightful Node.js packages and resources
+
+<details>
+
+<summary>Web Frameworks</summary>
 
 ### Web Frameworks
 
@@ -47,3 +73,8 @@ Repositories and authors worth following
 
 - [nestjs/nest](https://github.com/nestjs/nest) - A progressive Node.js framework for building efficient, scalable, and enterprise-grade server-side applications on top of TypeScript & JavaScript (ES6, ES7, ES8) 🚀
 
+
+
+</details>
+
+</details>
