@@ -1,7 +1,7 @@
 # repos
 collections:
-  label: Awesome-* Collections
-  label_zh_CN: Awesome-* 集合
+  label: Awesome Collections
+  label_zh_CN: Awesome 集合
   open: true
   repos:
     - sindresorhus/awesome-nodejs
