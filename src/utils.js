@@ -44,7 +44,7 @@ exports.fetchReposInfo = async (repos) => {
       description: queryRes[key].description,
       starCount: queryRes[key].stargazers.totalCount,
     }
-  }))
+  }), {})
   console.log('result is: ', result)
   return result
 }
