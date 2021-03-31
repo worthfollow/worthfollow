@@ -1,0 +1,12 @@
+label: Frontend
+label_zh_CN: 前端
+repos:
+  - dypsilon/frontend-dev-bookmarks
+children:
+  frameworks:
+    label: Frontend Frameworks
+    label_zh_CN: 前端框架
+    repos:
+      - angular/angular
+      - facebook/react
+      - vuejs/vue

@@ -48,10 +48,22 @@ const generate = async (tree, level = 2) => {
   await fs.writeFile(markdownPath, markdownContent)
 }
 
+const getRepos = async () => {
+  const result = {}
+  const reposDir = path.join(__dirname, 'data', 'repos')
+  const reposDirData = await fs.readdir(reposDir)
+  for (const file of reposDirData) {
+    const name = path.basename(file, '.yml')
+    const fileContent = await fs.readFile(path.join(reposDir, file), 'utf-8')
+    const data = YAML.parse(fileContent)
+    result[name] = data
+  }
+  return result
+}
+
 const buildReadme = async () => {
-  const dataFile = await fs.readFile(path.join(__dirname, 'data', 'repos.yml'), 'utf-8')
-  const tree = YAML.parse(dataFile)
-  const repoTree = tree.repos
+  const repoTree = await getRepos()
+  console.log('repoTree is: ', repoTree)
   const repoSet = new Set()
   walk(repoTree, node => {
     node.repos.forEach(repo => repoSet.add(repo))
