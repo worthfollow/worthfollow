@@ -60,7 +60,7 @@ const buildReadme = async () => {
   const repos = Array.from(repoSet)
   const repoInfo = await fetchReposInfo(repos)
   walk(repoTree, (node, _fullpath, pNode) => {
-    node.repos = node.repos.map(key => repoInfo[key])
+    node.repos = node.repos.map(key => repoInfo[key]).sort((a, b) => b.starCount - a.starCount)
     node.starCount = node.repos.reduce((res, repo) => res + repo.starCount, node.starCount || 0)
     if (pNode) {
       pNode.starCount = (pNode.starCount || 0) + node.starCount
