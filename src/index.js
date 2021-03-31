@@ -14,7 +14,12 @@ const _generate = async (tree, level = 2) => {
   }
   level = Math.min(6, level) // head level
   const useDetails = level === 2
-  const keys = Object.keys(tree).sort((a, b) => tree[b].starCount - tree[a].starCount)
+  const keys = Object.keys(tree).sort((a, b) => {
+    if (tree[a].order !== tree[b].order) {
+      return tree[a].order - tree[b].order
+    }
+    return tree[b].starCount - tree[a].starCount
+  })
   const indent = '#'.repeat(level) + ' '
   const result = (await Promise.all(keys.map(async key => {
     const { repos, label, children, open } = tree[key]
@@ -46,7 +51,10 @@ const buildReadme = async () => {
   const dataFile = await fs.readFile(path.join(__dirname, 'data', 'source.yml'), 'utf-8')
   const tree = YAML.parse(dataFile)
   const repoSet = new Set()
-  walk(tree, node => node.repos.forEach(repo => repoSet.add(repo)))
+  walk(tree, node => {
+    node.repos.forEach(repo => repoSet.add(repo))
+    node.order = node.order || Number.MAX_VALUE
+   })
   const repos = Array.from(repoSet)
   const repoInfo = await fetchReposInfo(repos)
   walk(tree, (node, _fullpath, pNode) => {
