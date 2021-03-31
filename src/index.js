@@ -13,6 +13,7 @@ const _generate = async (tree, level = 2) => {
     return ''
   }
   level = Math.min(6, level) // head level
+  const useDetails = level === 2
   const keys = Object.keys(tree).sort((a, b) => tree[b].starCount - tree[a].starCount)
   const indent = '#'.repeat(level) + ' '
   const result = (await Promise.all(keys.map(async key => {
@@ -25,7 +26,10 @@ const _generate = async (tree, level = 2) => {
       return `- [${repo.name}](https://github.com/${repo.name}) - ${repo.description}`
     }).join('\n\n')
     const childrenContent = await _generate(children, level + 1)
-    return [detailsHead, summary, title, repoContent, childrenContent, detailsTail].join('\n\n')
+    const result = useDetails ?
+      [detailsHead, summary, title, repoContent, childrenContent, detailsTail].join('\n\n') :
+      [title, repoContent, childrenContent].join('\n\n')
+    return result
   }))).join('\n\n')
   return result
 }
