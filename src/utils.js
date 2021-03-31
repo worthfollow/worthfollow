@@ -27,7 +27,13 @@ exports.fetchReposInfo = async (repos) => {
   })
   const query = `{${queries.join(',')}}`
   const queryRes = await graphql(query, { headers })
-  console.log(queryRes)
+  console.log('queryRes is: ', queryRes)
+  const result = Object.keys(queryRes.data).reduce((res, key) => ({
+    ...res,
+    [key.substr(1)]: queryRes.data[key]
+  }))
+  console.log('result is: ', result)
+  return result
 }
 
 const _walk = (tree, cb, pathes = []) => {
