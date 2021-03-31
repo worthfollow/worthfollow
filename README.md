@@ -33,9 +33,9 @@ Repositories and authors worth following
 
 <details open>
 
-<summary>Awesome-* Collections</summary>
+<summary>Awesome Collections</summary>
 
-## Awesome-* Collections
+## Awesome Collections
 
 - [sindresorhus/awesome-nodejs](https://github.com/sindresorhus/awesome-nodejs) - :zap: Delightful Node.js packages and resources
 
