@@ -20,7 +20,7 @@ const _generate = async (tree, level = 2) => {
     const title = `${indent}${label}`
     const repoContent = repos.map(repo => {
       return `- [${repo.name}](https://github.com/${repo.name}) - ${repo.description}`
-    })
+    }).join('\n\n')
     const childrenContent = await _generate(children, level + 1)
     return [title, repoContent, childrenContent].join('\n\n')
   }))).join('\n\n')
