@@ -90,4 +90,7 @@ const buildReadme = async () => {
   await generate(repoTree)
 }
 
-buildReadme()
+buildReadme().catch(err => {
+  console.error(err)
+  process.exit(1)
+})

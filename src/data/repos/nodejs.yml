@@ -2,7 +2,7 @@ label: Node.js
 repos:
   - { name: nodejs/node }
   - { name: sindresorhus/awesome-nodejs }
-  - { name: expressjs/expres, category: webFrameworks }
+  - { name: expressjs/express, category: webFrameworks }
   - { name: koajs/koa, category: webFrameworks }
   - { name: hapijs/hapi, category: webFrameworks }
   - { name: nestjs/nest, category: webFrameworks }
