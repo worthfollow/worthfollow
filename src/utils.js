@@ -4,7 +4,8 @@
  */
 
 const { graphql } = require('@octokit/graphql')
-const base62 = require('base62/lib/ascii')
+const { customAlphabet } = require('nanoid/non-secure')
+const nanoid = customAlphabet('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_', 10)
 
 const headers = {
   authorization: `Bearer ${process.env.GITHUB_TOKEN}`
@@ -16,9 +17,16 @@ const headers = {
  * @returns {object} { [repoName]: { description: '', star: '', collaborators: [] } }
  */
 exports.fetchReposInfo = async (repos) => {
+  const keyMap = {}
   const queries = repos.map(repo => {
     const [owner, name] = repo.split('/')
-    const key = 'A' + base62.encode(repo)
+
+    let key = nanoid()
+    while(keyMap[key]) {
+      key = nanoid()
+    }
+
+    keyMap[key] = repo
     return `
       ${key}: repository (owner: "${owner}", name: "${name}") {
         name,
@@ -26,11 +34,12 @@ exports.fetchReposInfo = async (repos) => {
       }`
   })
   const query = `{${queries.join(',')}}`
+  console.log('query is: ', query)
   const queryRes = await graphql(query, { headers })
   console.log('queryRes is: ', queryRes)
   const result = Object.keys(queryRes.data).reduce((res, key) => ({
     ...res,
-    [key.substr(1)]: queryRes.data[key]
+    [keyMap[key]]: queryRes.data[key]
   }))
   console.log('result is: ', result)
   return result
