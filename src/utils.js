@@ -29,23 +29,26 @@ exports.fetchReposInfo = async (repos) => {
     keyMap[key] = repo
     return `
       ${key}: repository (owner: "${owner}", name: "${name}") {
-        name,
-        description
+        description,
+        stargazers {
+          totalCount
+        }
       }`
   })
   const query = `{${queries.join(',')}}`
-  console.log('query is: ', query)
   const queryRes = await graphql(query, { headers })
-  console.log('queryRes is: ', queryRes)
-  const result = Object.keys(queryRes.data).reduce((res, key) => ({
+  const result = Object.keys(queryRes).reduce((res, key) => ({
     ...res,
-    [keyMap[key]]: queryRes.data[key]
+    [keyMap[key]]: {
+      name: keyMap[key],
+      description: queryRes[key].description,
+      starCount: queryRes[key].stargazers.totalCount,
+    }
   }))
-  console.log('result is: ', result)
   return result
 }
 
-const _walk = (tree, cb, pathes = []) => {
+const _walk = (tree, cb, pathes = [], parent = null) => {
   if (!tree) {
     return
   }
@@ -54,8 +57,8 @@ const _walk = (tree, cb, pathes = []) => {
     const fullpath = [...pathes, key]
     const fullpathStr = fullpath.join('.')
     const node = tree[key]
-    cb(node, fullpathStr)
-    _walk(node.children, cb, fullpath)
+    _walk(node.children, cb, fullpath, node)
+    cb(node, fullpathStr, parent)
   })
 }
 

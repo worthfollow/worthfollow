@@ -14,6 +14,6 @@ frontend:
       label: Frontend Frameworks
       label_zh_CN: 前端框架
       repos:
-        - angular/angular
+        # - angular/angular
         - facebook/react
-        - vuejs/vue
+        # - vuejs/vue
