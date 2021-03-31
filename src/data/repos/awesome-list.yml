@@ -11,3 +11,10 @@ repos:
   - { name: vinta/awesome-python }
   - { name: vsouza/awesome-ios }
   - { name: JStumpp/awesome-android }
+  - { name: sindresorhus/awesome-electron }
+  - { name: jondot/awesome-react-native }
+  - { name: iCHAIT/awesome-macOS }
+  - { name: Solido/awesome-flutter }
+  - { name: denolib/awesome-deno }
+  - { name: thibmaek/awesome-raspberry-pi }
+  - { name:  }

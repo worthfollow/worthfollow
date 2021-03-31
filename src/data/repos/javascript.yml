@@ -1,0 +1,5 @@
+label: Javascript
+repos:
+  - { name: dustinspecker/awesome-eslint }
+  - { name: wbinnssmith/awesome-promise }
+  - { name: standard/awesome-standard }
