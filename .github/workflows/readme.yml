@@ -4,7 +4,8 @@ on:
       - main
       - develop
     paths:
-      - './src'
+      - './src/**'
+      - './github/workflows/readme.yml'
 name: Build Readme
 jobs:
   readme:
