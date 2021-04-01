@@ -1,5 +1,5 @@
 label: Javascript
 repos:
   - { name: dustinspecker/awesome-eslint }
-  - { name: wbinnssmith/awesome-promise }
+  - { name: wbinnssmith/awesome-promises }
   - { name: standard/awesome-standard }
