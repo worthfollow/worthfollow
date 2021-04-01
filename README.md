@@ -23,13 +23,25 @@ Repositories and authors worth following
 
 - [vsouza/awesome-ios](https://github.com/vsouza/awesome-ios#readme) - A curated list of awesome iOS ecosystem, including Objective-C and Swift Projects 
 
+- [Solido/awesome-flutter](https://github.com/Solido/awesome-flutter#readme) - An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more.
+
 - [dypsilon/frontend-dev-bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks#readme) - Manually curated collection of resources for frontend web developers.
 
+- [jondot/awesome-react-native](https://github.com/jondot/awesome-react-native#readme) - Awesome React Native components, news, tools, and learning material!
+
+- [sindresorhus/awesome-electron](https://github.com/sindresorhus/awesome-electron#readme) - Useful resources for creating apps with Electron
+
 - [Awesome-Windows/Awesome](https://github.com/Awesome-Windows/Awesome#readme) - :computer: 🎉 An awesome & curated list of best applications and tools for Windows.
+
+- [iCHAIT/awesome-macOS](https://github.com/iCHAIT/awesome-macOS#readme) -   A curated list of awesome applications, softwares, tools and shiny things for macOS.
+
+- [thibmaek/awesome-raspberry-pi](https://github.com/thibmaek/awesome-raspberry-pi#readme) - 📝 A curated list of awesome Raspberry Pi tools, projects, images and resources
 
 - [JStumpp/awesome-android](https://github.com/JStumpp/awesome-android#readme) - A curated list of awesome Android packages and resources.
 
 - [awesomeWM/awesome](https://github.com/awesomeWM/awesome#readme) - awesome window manager
+
+- [denolib/awesome-deno](https://github.com/denolib/awesome-deno#readme) - Curated list of awesome things related to Deno
 
 
 
@@ -74,4 +86,14 @@ Repositories and authors worth following
 ## Android
 
 - [JStumpp/awesome-android](https://github.com/JStumpp/awesome-android#readme) - A curated list of awesome Android packages and resources.
+
+
+
+## Javascript
+
+- [dustinspecker/awesome-eslint](https://github.com/dustinspecker/awesome-eslint#readme) - A list of awesome ESLint plugins, configs, etc.
+
+- [wbinnssmith/awesome-promises](https://github.com/wbinnssmith/awesome-promises#readme) - A curated list of useful resources for JavaScript Promises
+
+- [standard/awesome-standard](https://github.com/standard/awesome-standard#readme) - Documenting the explosion of packages in the standard ecosystem!
 
